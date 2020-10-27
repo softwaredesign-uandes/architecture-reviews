@@ -1,5 +1,5 @@
 # OpenEdx - Overview
-
+![openedx logo](assets/openedx.png "OpenEdx logo")
 ## Description
 
 OpenEdx is an open-source Learning Management System (LMS) that allows deploying a full learning ecosystem for educational institutions that may want to offer online courses.
