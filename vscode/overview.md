@@ -3,6 +3,10 @@
 ## Description
 
 //ToDo: Provide an overall description of the system and mainfunctional characteristics:  what is the purpose of the system, whouses the system, what type of users does the system have and whatcan each type of user do with the system.
+### Purpose of the system
+The system is intended to be used for software development and general source code edition
+
+
 
 ## Visualization
 
