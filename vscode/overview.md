@@ -15,14 +15,14 @@ We can recognize 2 types of users for the application:
 - Normal users: also known as developers, are those who use the application for coding purposes. They know how to use the application and use the extension system for personalization.
 - Extension developers: those who use the Extension API and develop extensions for the application. They may use the application for coding purposes but are diferenciated due its capabilities on extension development.
 
-## 2 Visualization
+## 2. Visualization
 
 The following diagrams describes 2 levels of the architecture of the system.
 
 ![Context diagram](assets/context_diagram.png "Context diagram")
 ![Container diagram](assets/container_diagram.png "Container diagram")
 
-## 3. Quality Attrbiutes
+## 3. Quality Attributes
 
 In the following section, three Quality Attributes are specified for VSCode and a QA scenario is developed for each one.
 
