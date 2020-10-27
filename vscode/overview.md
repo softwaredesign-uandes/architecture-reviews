@@ -17,6 +17,7 @@ We can recognize 2 kinds of users for the application.
 
 ## 2 Visualization
 
+<<<<<<< HEAD
 The following diagrams describes to levels of the architecture of the system.
 
 ![Context diagram](assets/context_diagram.png "Context diagram")
@@ -26,7 +27,17 @@ The following diagrams describes to levels of the architecture of the system.
 
 //ToDo: Describe the 3 principal QAs for the project,based on your understanding of the system. Provide 1 relevant QAscenario for each.
 
+### 3.1 QA description
+
+The 3 principal QAs for VSCode, based on our understanding of the system, are as follows:
+
+    1. Performance: this text editor stands out for being lightweight, and seeks that the user can code quickly. The extensions of VSCode add functionalities, however, these run in different processes, so the decrease little or nothing the performance of the software.
+
+    2. Usability: this attribute, being one of the most important, also stands out in VSCode. First of all, this text editor has a huge list of keyboard shortcuts, which accelerate user interaction. Secondly, VSCode is available for Windows, macOS and Linux, i.e., the most used operating systems in the world. Also, it is easy to understand how to use it, where everything is, etc.
+
+    3. Flexibility: this text editor is built with extensibility in mind, which makes it very flexible, since extensions provide a lot and in a wide range of functionalities, ranging from improving the UI and UX to support a new programming language or debugging a specific runtime.
+
 ### 3.2 QA scenarios
 
-#### Flexibility
+#### 3.2.3 Flexibility
 1. Scenario description: A ruby on rails developer 
