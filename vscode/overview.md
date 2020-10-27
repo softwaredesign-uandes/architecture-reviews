@@ -39,4 +39,17 @@ The 3 principal QAs for VSCode, based on our understanding of the system, are as
 ### 3.2 QA scenarios
 
 #### 3.2.3 Flexibility
-1. Scenario description: A ruby on rails developer 
+
+1. Scenario description: A Ruby on Rails developer that uses vscode was asked by his supervisor to develop a simple javascript application using NodeJS and other tools based on javascript. The developer rapidly downloads several extensions at the same time and the extension system integrates them into the application without vscode application downtime.
+
+2. Source: Developer downloading extensions.
+
+3. Stimulus/Event: Several extensions being download.
+
+4. Artifact: Extension system.
+
+5. Environment: Normal operation.
+
+6. Response: Response that extensions were downloaded, continue to operate.
+
+7. Response measure: No downtime.
