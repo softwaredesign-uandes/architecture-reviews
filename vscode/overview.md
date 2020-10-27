@@ -4,11 +4,11 @@
 
 ### 1.1 Purpose of the system
 
-The application is intended to be used for software development and general source code edition. Is a desktop application that works on Windows,Linux and macOS. The main characteristic of the application is its flexibility and extension availability, which makes the application very customizable, at the taste of the user.
+The application is intended to be used for software development and general source code edition. Is a desktop application that works on Windows, Linux and macOS. The main characteristic of the application is its flexibility and extension availability, which makes the application very customizable, at the taste of the user.
 
 ### 1.2 System users
 
-The application is mainly used by software developers that need a lightweight code editor. It is the most used code editor due to its flexibility and extension availability. Also, the Extension Api, that provides functionalities for making other extensions.
+The application is mainly used by software developers that need a lightweight code editor. It is the most used code editor due to its flexibility and extension availability. Also, the Extension API, that provides functionalities for making other extensions.
 
 We can recognize 2 kinds of users for the application.
 
@@ -17,8 +17,7 @@ We can recognize 2 kinds of users for the application.
 
 ## 2 Visualization
 
-<<<<<<< HEAD
-The following diagrams describes to levels of the architecture of the system.
+The following diagrams describes 2 levels of the architecture of the system.
 
 ![Context diagram](assets/context_diagram.png "Context diagram")
 ![Container diagram](assets/container_diagram.png "Container diagram")
