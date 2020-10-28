@@ -18,27 +18,42 @@ Advanced users can employ Blender's API for python to include specialized tools 
 
 ### QA1
 Rendering large 3d model with the Eevee renderer. Performance
+
 High priority.
+
 Source → Users.
+
 Stimulus/Event → Render file.
+
 Artifact → Eevee.
+
 Environment → normal operations.
+
 Response → creates 2d view of model.
+
 Response measure → Time and processing power used during render.
 
 ### QA2
 Physics simulation. Users have to be able to simultate certain physical phenomena.
 Performance
+
 Medium Priority
+
 Source → Users.
+
 Stimulus/Event → Attempt to simultate water.
+
 Artifact → Blender.
+
 Environment → Normal runtime.
+
 Response → Simulate the movement of water according to real physics.
+
 Response measure → Time of rendering and similarity with reality.
 
 ### QA3
 Cross platform usability: Blender boasts usability in windows, iOS, and Linux making it a very versitile software. A user using blender on different platforms must be able to enjoy all of it's attributes equally.
+
 High Priority
 
 Source → Users.
