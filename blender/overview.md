@@ -10,7 +10,7 @@ Advanced users can employ Blender's API for python to include specialized tools 
 
 ## Visualization
 
-![alt text](assets/structurizr_Context.png "Context View")
+![alt text](assets/structurizr-Context.png "Context View")
 
 ![alt text](assets/BlenderView1.png "Container View")
 
