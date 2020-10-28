@@ -40,9 +40,14 @@ Response measure → Time of rendering and similarity with reality.
 ### QA3
 Cross platform usability: Blender boasts usability in windows, iOS, and Linux making it a very versitile software. A user using blender on different platforms must be able to enjoy all of it's attributes equally.
 High Priority
+
 Source → Users.
-Stimulus/Event → use of different features.}
+
+Stimulus/Event → use of different features.
+
 Artifact → Linux.
+
 Environment → Runtime.
+
 Response → continue working the same as other OSs.
 Response measure → speed of different functions under different OSs.ibe the 3 principal QAs for the project,based on your understanding of the system.  Provide 1 relevant QAscenario for each.
