@@ -36,8 +36,8 @@ In this image have all applications that works with IPFS
 
 ## Quality Attributes
 
-1. HTTP downloads files from one computer at a time instead of getting pieces from multiple computers simultaneously. Peer-to-peer IPFS saves big on bandwidth — up to 60% for video — making it possible to efficiently distribute high volumes of data without duplication.
+1. Performance:  HTTP downloads files from one computer at a time instead of getting pieces from multiple computers simultaneously. Peer-to-peer IPFS saves big on bandwidth — up to 60% for video — making it possible to efficiently distribute high volumes of data without duplication.
 
-2. The average lifespan of a web page is 100 days before it's gone forever. It's not good enough for the primary medium of our era to be this fragile. IPFS keeps every version of your files and makes it simple to set up resilient networks for mirroring data.
+2. Robustness: The average lifespan of a web page is 100 days before it's gone forever. It's not good enough for the primary medium of our era to be this fragile. IPFS keeps every version of your files and makes it simple to set up resilient networks for mirroring data.
 
-3. IPFS powers the creation of diversely resilient networks that enable persistent availability — with or without Internet backbone connectivity. This means better connectivity for the developing world, during natural disasters, or just when you're on flaky coffee shop wi-fi.
+3. Availability: IPFS powers the creation of diversely resilient∫ networks that enable persistent availability — with or without Internet backbone connectivity. This means better connectivity for the developing world, during natural disasters, or just when you're on flaky coffee shop wi-fi.
