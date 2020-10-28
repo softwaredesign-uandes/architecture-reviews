@@ -10,8 +10,11 @@ This client may not necessarily be a person, as it Elasticsearch is meant to be 
 
 ## Visualization
 Container Diagram
+
 ![alt text](assets/ContainerDiagram.png "Container Diagram")
+
 Context Diagram
+
 ![alt text](assets/ContextDiagram.png "Context Diagram")
 
 ## Quality Attrbiutes
