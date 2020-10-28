@@ -21,11 +21,12 @@ One important design decision at OpenEdx is the adoption of IDAs (independently 
 
 ## Visualization
 
-//ToDo: Using Structurizr model the architectural structure ofthe system, and generate a Landscape/Context diagram and one ormore Container diagrams.  You must include all types of users, and allexternal services integrated.
+### Landscape/Context Diagram
+![landscape diagram](https://imgur.com/mrz3b3l)
 
-![alt text](assets/default.png "Image Example")
+### OpenEdx Container Diagram
+![container diagram](https://imgur.com/fhvyrel)
 
-## Quality Attrbiutes
 
 ## Quality Attributes
 
