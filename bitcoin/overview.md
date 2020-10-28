@@ -86,9 +86,25 @@ A “bitcoin wallet” is the most common user interface to the bitcoin system, 
    >
    >**Response**: The system keeps working
    >
-   >**Response measure**: No failing transactions
+   >**Response measure**: No failing transactions 
 
 
-3. **Interoperability**
+4. **Usability**
 
-   Interoperability is an attribute of the system that is responsible for the operations and transmissions of data and its exchange between other systems. To improve the interoperability, other systems can use well-designed external interfaces, standardization systems, etc. The Bitcoin protocol is implementation agnostic. Although a reference implementation in C++ was provided by its creator, a number of different implementations coexist and operate in the Bitcoin network, specially in wallet-only clients. 
+   Usability is about how easy is for the user to accomplish an specific task with success. In Bitcoin there are several measures to minimize the possibility of errors while using the system, which increases the confidence and satisfaction of the user. This is important considering that transactions are irreversible.
+
+   > *QA Scenario*
+   >
+   > "Bitcoin user mistakenly enters a wrong character in the money recipient's address. Since addresses have a checksum, the transaction is considered invalid and no money is lost"
+   >
+   > **Source**: Wallet owner
+   >
+   > **Stimulus**: Inserts a wrong character in output’s address
+   >
+   > **Artifact**: Transaction validation
+   >
+   > **Environment**: Normal operation
+   >
+   > **Response**: Transaction cancelled
+   >
+   > **Response measure**: No cost of error
