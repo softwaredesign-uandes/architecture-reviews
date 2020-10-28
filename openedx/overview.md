@@ -22,10 +22,10 @@ One important design decision at OpenEdx is the adoption of IDAs (independently 
 ## Visualization
 
 ### Landscape/Context Diagram
-![landscape diagram](https://imgur.com/mrz3b3l)
+![landscape diagram](assets/landscape.png "landscape diagram")
 
 ### OpenEdx Container Diagram
-![container diagram](https://imgur.com/fhvyrel)
+![container diagram](assets/container.png "container diagram")
 
 
 ## Quality Attributes
