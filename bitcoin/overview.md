@@ -2,13 +2,17 @@
 
 ## Description
 
-//ToDo: Provide an overall description of the system and mainfunctional characteristics:  what is the purpose of the system, whouses the system, what type of users does the system have and whatcan each type of user do with the system.
+
 
 ## Visualization
 
-//ToDo: Using Structurizr model the architectural structure ofthe system, and generate a Landscape/Context diagram and one ormore Container diagrams.  You must include all types of users, and allexternal services integrated.
+### Context Diagram
 
-![alt text](assets/default.png "Image Example")
+![image-20201028003354700](assets/image-20201028003354700.png)
+
+### Container Diagram
+
+![image-20201028003842079](assets/image-20201028003842079.png)
 
 ## Quality Attrbiutes
 
