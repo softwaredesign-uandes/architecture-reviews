@@ -19,4 +19,32 @@ Context Diagram
 
 ## Quality Attrbiutes
 
-//ToDo: Describe the 3 principal QAs for the project,based on your understanding of the system.  Provide 1 relevant QAscenario for each.
+- Availability: The main QA which with the Elasticsearch page describes itself. The whole architecture is design around this idea, meaning that the system never collapses from high workload. The client must be able to connect from differents points at the same time, making queries of different answer sizes, and the service must always be available and respond accordingly.
+
+Scenario: A user makes a query at the peak hour for queries in the busiest day of the month; the system keeps working normally and responds to the query accordingly with no downtime.
+1. Source: User
+2. Stimulus: Query by the user
+3. Artifact: Data Storage
+4. Environment: Peak hour in the busiest day of the month
+5. Response: Continue to operate; returns successful response
+6. Response measure: No downtime
+
+- Robustness/Reliability: It is expected that the service never fails. If something unexpected happens inside or outside the system, Elasticsearch can still perform the queries and return the correct answers.
+
+Scenario: A user makes a corrupted query, using a wrong format in the JSON. The systems respond with an error message and keeps working normally.
+1. Source: User
+2. Stimulus: Query by the user
+3. Artifact: API
+4. Environment: Wrong query formatting on the client side
+5. Response: Continue to operate; returns error message
+6. Response measure: No system failure
+
+- Performance: It is expected that the speed in which the service answers the queries is fast enough to mantain the quality of the client experience.
+
+Scenario: A user makes a complex query that would take a lot of resources to complete. The user recieves the correct answer in an acceptable time period.
+1. Source: User
+2. Stimulus: Query by the user
+3. Artifact: Storage Data
+4. Environment: Complex query 
+5. Response: Returns correct answer
+6. Response measure: Acceptable time period.
