@@ -9,10 +9,10 @@ There are two types of users: the administrator user, who configures it and inde
 This client may not necessarily be a person, as it Elasticsearch is meant to be used by other applications and services.
 
 ## Visualization
-
-//ToDo: Using Structurizr model the architectural structure ofthe system, and generate a Landscape/Context diagram and one ormore Container diagrams.  You must include all types of users, and allexternal services integrated.
-
-![alt text](assets/default.png "Image Example")
+Container Diagram
+![alt text](assets/ContainerDiagram.png "Container Diagram")
+Context Diagram
+![alt text](assets/ContextDiagram.png "Context Diagram")
 
 ## Quality Attrbiutes
 
