@@ -10,7 +10,7 @@ Advanced users can employ Blender's API for python to include specialized tools 
 
 ## Visualization
 
-![alt text](assets/BlenderView.png "Blender View")
+![alt text](assets/BlenderView1.png "Blender View")
 
 ## Quality Attrbiutes
 
