@@ -12,7 +12,7 @@ Advanced users can employ Blender's API for python to include specialized tools 
 
 //ToDo: Using Structurizr model the architectural structure ofthe system, and generate a Landscape/Context diagram and one ormore Container diagrams.  You must include all types of users, and allexternal services integrated.
 
-![alt text](assets/default.png "Image Example")
+![alt text](assets/BlenderView.png "Blender View")
 
 ## Quality Attrbiutes
 
