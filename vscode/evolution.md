@@ -7,13 +7,60 @@ The current repository does not have the complete history of vscode, but it has 
 
 ## 2. Architecture Decision Records
 
-### ADR 1: Electron as main framework
+### ADR 1: Electron as main framework (Origin)
 
+#### Context
 
-### ADR 2: Monaco editor for workbench layer
+- The application needed to be a desktop application
+- Microsoft wanted to make a cross-platform application
 
-### ADR 3: Architecture for extensions
+#### Decision
 
-### ADR 4: Core architecture layered
+- Use electron as main framework
 
-### ADR 5: VSCode open source
+#### Status: Implemented
+
+#### Consequences
+
+- Had to use NodeJS as backend for vscode
+- Maintain further updates of the framework.
+
+### ADR 2: Core architecture layered (Origin)
+
+#### Context
+
+- Needed an architecture that allow extensibility and order in the code
+
+#### Decision
+
+- Separate the application in 5 layers: Base, platform, editor, languages and workbench
+
+#### Status: Implemented
+
+#### Consequences
+
+- Comunication between all the blocks should be implemented for being monitored
+- Adapt this layer structure to electron.
+
+### ADR 3: Monaco editor for workbench layer (Origin)
+
+#### Context
+
+- Needed a base editor for the application
+- The editor should be able to use in a JS environment
+- The editor should be basic and open source
+
+#### Decision
+
+- Use Monaco as Editor in the workbench layer
+
+#### Status: Implemented
+
+#### Consequences
+
+- Make the workbench layer able to provide framework viewlets (Explorer, status bar, menu, etc.)
+- Integrate the debugging funtion in the editor
+
+### ADR 4: Architecture for extensions
+
+### ADR 5: Removal of languages layer
