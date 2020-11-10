@@ -55,6 +55,29 @@ Verified
 
 A lot of cost wasted rewriting the most of the module DHT
 
+# QUIC by default - Release 0.6.0
+
+## Context
+
+- QUIC transport is enabled by default for both inbound and outbound connections. When connecting to new peers, libp2p will continue to dial all advertised addresses in parallel (tcp + quic), so if the QUIC connection fails, the connection should still succeed.
+
+## Decision
+
+- It takes fewer round-trips to establish a connection. With the QUIC transport, the IPFS handshake takes two round trips. In the future, this will be improved for reduce it to one round trip.
+- The QUIC transport will open one UDP socket per listen address instead of one socket per connection.
+  
+
+## Status
+
+Implemented
+
+## Consequences
+
+- Have to make two round trips for establish a connection and the handshake, this should be improved to one round trip.
+
+
+
+
 4.18
 change type of CID
 implement quic 
