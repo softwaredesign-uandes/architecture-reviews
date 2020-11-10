@@ -71,7 +71,7 @@ Implemented
 
 - Have to make two round trips for establish a connection and the handshake, this should be improved to one round trip. 
 
-# Removing support for the SECIO security transport - Release 0.7.0
+# ADR 3: Removing support for the SECIO security transport - Release 0.7.0
 
 ## Context
 
@@ -91,7 +91,7 @@ Deprecated
 
 - Older nodes on the network that only support SECIO will no longer be able to communicate with IPFS nodes after 0.7
 
-# ADR 3: QUIC - Release 0.4.18
+# ADR 4:  Implement QUIC - Release 0.4.18
 
 ## Context
 
@@ -114,7 +114,7 @@ Implemented
 - Better NAT traversal: NAT hole-punching is significantly easier and, in many cases, more reliable with UDP than with TCP.
 
 
-# ADR 4: Performance - Release 0.4.18
+# ADR 5: Performance Resources - Release 0.4.18
 
 ## Context
 
