@@ -20,7 +20,53 @@ Code Frequency
 
 
 
-# ADR 1: New DHT - Release 0.5.0
+# Implement QUIC - Release 0.4.18
+
+## Context
+
+- QUIC is a new UDP-based network transport, can share a single file descriptor between all connections. This release has introduced experimental support for the QUIC protocol.
+
+## Decision
+
+- Implement QUIC as a new protocol to solve issues with TCP.
+
+
+## Status
+
+Implemented
+
+## Consequences
+
+- Fewer local resources: allow us to dial faster and keep more connections open.
+- Faster connection establishment: significantly reduce the latency of DHT queries.
+- Behaves better on lossy networks: QUIC handles multiplexing internally, dropping a single packets affects only the related stream.
+
+
+# Performance Resources - Release 0.4.18
+
+## Context
+
+- Actual the resource of utlization are a problem when it use the IPFS becouse the IPFS use alot of CPU and memory.
+
+## Decision
+
+- Changed two of our most frequently used datastructures, CIDs and Multiaddrs, to reduce allocation load.
+- Store CIDs encode as strings, instead of decoded in structs.
+- Changed many of our multiaddr parsing/processing/formatting functions to allocate less.
+
+
+## Status
+
+- Implemented
+
+## Consequences
+
+- Reduce CPU utilization when heavily using the DHT.
+- Improve memory usage when inserting CID.
+
+
+
+# New DHT - Release 0.5.0
 
 ## Context
 
@@ -54,7 +100,7 @@ Implemented
 - Brings stability to connections.
 - A lot of cost wasted rewriting the most of the module DHT.
 
-# ADR 2: QUIC by default - Release 0.6.0
+# QUIC by default - Release 0.6.0
 
 ## Context
 
@@ -74,7 +120,7 @@ Implemented
 
 - Have to make two round trips for establish a connection and the handshake, this should be improved to one round trip. 
 
-# ADR 3: Removing support for the SECIO security transport - Release 0.7.0
+# Removing support for the SECIO security transport - Release 0.7.0
 
 ## Context
 
@@ -93,49 +139,3 @@ Implemented
 ## Consequences
 
 - Older nodes on the network that only support SECIO will no longer be able to communicate with IPFS nodes after 0.7
-
-# ADR 4:  Implement QUIC - Release 0.4.18
-
-## Context
-
-- QUIC is a new UDP-based network transport, can share a single file descriptor between all connections. This release has introduced experimental support for the QUIC protocol.
-
-## Decision
-
-- Implement QUIC as a new protocol to solve issues with TCP.
-
-
-## Status
-
-Implemented
-
-## Consequences
-
-- Fewer local resources: allow us to dial faster and keep more connections open.
-- Faster connection establishment: significantly reduce the latency of DHT queries.
-- Behaves better on lossy networks: QUIC handles multiplexing internally, dropping a single packets affects only the related stream.
-
-
-# ADR 5: Performance Resources - Release 0.4.18
-
-## Context
-
-- Actual the resource of utlization are a problem when it use the IPFS becouse the IPFS use alot of CPU and memory.
-
-## Decision
-
-- Changed two of our most frequently used datastructures, CIDs and Multiaddrs, to reduce allocation load.
-- Store CIDs encode as strings, instead of decoded in structs.
-- Changed many of our multiaddr parsing/processing/formatting functions to allocate less.
-
-
-## Status
-
-- Implemented
-
-## Consequences
-
-- Reduce CPU utilization when heavily using the DHT.
-- Improve memory usage when inserting CID.
-
-
