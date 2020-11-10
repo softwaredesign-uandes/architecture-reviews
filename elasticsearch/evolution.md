@@ -2,6 +2,8 @@
 
 ## 1. History and Evolution
 
+### 1.1 Main Functional Differences
+
 Even from the begining, Elasticsearch was a search engine with different features:
 
 + Distributed and Highly Available Search Engine.
@@ -96,4 +98,55 @@ And now, it hasn't really change it's main functionality, but has added quality 
   + Helm Charts
   + Docker containerization
   
+### 1.2 Evolution in Numbers
+
+For the following Charts, the following versions of the ElasticSearch repository were used (with their corresponding attributes):
+
++ v0.4 (2010)
+  + Files: 1.350
+  + Lines of Code: 181.946
+  + Commit: b3337c312765e51cec7bde5883bbc0a08f56fb65
++ v0.15 (2011)
+  + Files: 2.329
+  + Lines of Code: 280.801
+  + Commit: dac2a888fbd4a1fbff50efe3d6600ce2ed0bb95b
++ v0.90 GA (2013)
+  + Files: 2.957
+  + Lines of Code: 561.527
+  + Commit: cb75ce0caa65af294167ae0d1514deec7815431b
++ v1.0.0 (2014)
+  + Files: 4.501
+  + Lines of Code: 758.745
+  + Commit: a46900e9c72c0a623d71b54016357d5f94c8ea32
++ v2.0.0-beta1 (2015)
+  + Files: 6.027
+  + Lines of Code: 1.123.593
+  + Commit: bfa3e47383d0adc690329a2fa1094ceb64cae651
++ v2.3.5 (2016)
+  + Files: 6.492
+  + Lines of Code: 1.229.010
+  + Commit: 90f439ff60a3c0f497f91663701e64ccd01edbb4
++ v5.5.0 (2017)
+  + Files: 8.796
+  + Lines of Code: 1.657.088
+  + Commit: 260387d2e4c0422c00adb04d160690ed1da05209
++ v6.4.0 (2018)
+  + Files: 13.292
+  + Lines of Code: 2.303.684
+  + Commit: 595516e45d054483dcdaf12f0468a59cb34bb568
++ v6.8.5 (2019)
+  + Files: 15.868
+  + Lines of Code: 2.729.228
+  + Commit: 78990e93431aebcc3dcd7fa20fab4b5b29ab7988
++ v7.9.3 Last GitHub Build (2020)
+  + Files: 20.022
+  + Lines of Code: 3.406.533
+  + Commit: c4138e51121ef06a6404866cddc601906fe5c868
+  
+![N° of Files in Time](./assets/FilesChart.png)
+
+![N° of Lines of Code in Time](./assets/LinesOfCodeChart.png)
+  
 ## 2. Architecture Decision Records
+
+
