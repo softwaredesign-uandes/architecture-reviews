@@ -55,3 +55,19 @@ All BIPs can be found [this repo](https://github.com/bitcoin/bips/blob/master/RE
 >
 > - There’s been some controversy over the idea that some entities provide a certificate that can validate payments, since this goes against the decentralization provided by Bitcoin, making the transaction process dependent on external, defined players.
 
+ ### [“BIP 32 Hierarchical Deterministic Wallets”](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) 
+
+> **Context**:
+>
+> - Losing a wallet means losing all the money it “holds”, a method to deterministically generate a wallet is needed. Also avoiding the necessity for a backup after every transaction without exposing the private keys.
+> - The method should be standardized so that the deterministic wallet can be interchanged between different clients.
+>
+> **Decision**:
+>
+> - A method for deterministically generating the same keys every time the same seed us used is needed.
+>
+> **Status**: Final
+>
+> **Consequences**:
+>
+> - All wallets should use the same standard algorithm to enable wallet portability. 
