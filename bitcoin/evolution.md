@@ -91,3 +91,22 @@ All BIPs can be found [this repo](https://github.com/bitcoin/bips/blob/master/RE
 > - No more transaction malleability attacks enable the implementation of new protocols like payment channels, chained transactions and lightning networks.
 > - Witness data is usually large and moving it out of the way improves bitcoin's scalability.
 > - Older wallets should be able to handle SegWit addresses.
+
+### “BIP 9 Version bits with timeout and delay”
+
+> **Context**:
+>
+> - A way of make changes and upgrades to Bitcoin without braking existing nodes is needed.
+> - Multiple forks of Bitcoin should be able to coexist at the same time to allow gradual transitions to the new consensus.
+>
+> **Decision**:
+>
+> - Change how the version field in blocks is interpreted, allowing simpler soft fork deployment.
+> - The version field should be interpreted as a bit vector, where each bit can be used to track an independent change. 
+>
+> **Status**: Final
+>
+> **Consequences**: 
+>
+> - Exists a standard to specify a description to each soft fork.
+> - Miners have a limited time to activate upgrades.
