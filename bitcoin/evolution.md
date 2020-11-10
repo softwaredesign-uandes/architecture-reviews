@@ -72,7 +72,7 @@ All BIPs can be found [this repo](https://github.com/bitcoin/bips/blob/master/RE
 >
 > - All wallets should use the same standard algorithm to enable wallet portability. 
 
-### “BIP 141 Segregated Witness (Consensus layer)”
+### [“BIP 141 Segregated Witness (Consensus layer)”](https://github.com/bitcoin/bips/blob/master/bip-0009.mediawiki)
 
 > **Context**:
 >
@@ -92,7 +92,7 @@ All BIPs can be found [this repo](https://github.com/bitcoin/bips/blob/master/RE
 > - Witness data is usually large and moving it out of the way improves bitcoin's scalability.
 > - Older wallets should be able to handle SegWit addresses.
 
-### “BIP 9 Version bits with timeout and delay”
+### [“BIP 9 Version bits with timeout and delay”](https://github.com/bitcoin/bips/blob/master/bip-0009.mediawiki)
 
 > **Context**:
 >
