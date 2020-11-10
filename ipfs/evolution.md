@@ -14,7 +14,8 @@ Aditions
 Deletions
 ![Commits](assets/deletions.png)
 
-
+Code Frequency
+![Commits](assts/../assets/code_frec.png)
 
 
 
@@ -33,23 +34,25 @@ Deletions
   - All IPFS nodes will now run two DHTs: one for the public internet WAN, and one for their local network LAN.
 
 - Query Logic
-  - Improove the DHT query logic to more closely follow Kademlia. This should significantly speed up:
-    - Publishing IPNS & provider records.
-    - Resolving IPNS addresses.
+  - Publishing IPNS & provider records.
+  - Resolving IPNS addresses.
 - Routing Tables
   - Addresing the poorly maintained routing tables by:
 
-  - Reducing the likelihood that the connection manager will kill connections to peers in the routing table.
-  - Keeping peers in the routing table, even if we get disconnected from them.
-  - Actively and frequently querying the DHT to keep our routing table full.
-  - Prioritizing useful peers that respond to queries quickly.
+  - Reducing the probability that the connection manager will kill connections to peers in the routing table.
+  - Keeping peers in the routing table even if we get disconnected from them.
+  - Prioritizing useful peers that respond to queries fast.
 ## Status
 
-Verified
+Implemented
 
 ## Consequences
 
-A lot of cost wasted rewriting the most of the module DHT
+
+- Connections terminate when hits the end of the query.
+- Improve tables logic.
+- Brings stability to connections.
+- A lot of cost wasted rewriting the most of the module DHT.
 
 # ADR 2: QUIC by default - Release 0.6.0
 
@@ -85,7 +88,7 @@ SECIO is a TLS-like security transport and has been the main security transport 
 
 ## Status
 
-Deprecated
+Implemented
 
 ## Consequences
 
@@ -111,7 +114,6 @@ Implemented
 - Fewer local resources: allow us to dial faster and keep more connections open.
 - Faster connection establishment: significantly reduce the latency of DHT queries.
 - Behaves better on lossy networks: QUIC handles multiplexing internally, dropping a single packets affects only the related stream.
-- Better NAT traversal: NAT hole-punching is significantly easier and, in many cases, more reliable with UDP than with TCP.
 
 
 # ADR 5: Performance Resources - Release 0.4.18
