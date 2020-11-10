@@ -71,3 +71,23 @@ All BIPs can be found [this repo](https://github.com/bitcoin/bips/blob/master/RE
 > **Consequences**:
 >
 > - All wallets should use the same standard algorithm to enable wallet portability. 
+
+### “BIP 141 Segregated Witness (Consensus layer)”
+
+> **Context**:
+>
+> - In Bitcoin, every transaction input was followed by the witness data that contained signatures to enable unlocking it for spending. 
+> - This opens the possibility for a malicious actor to modify the transaction, known as transaction malleability.
+>
+> **Decision**: 
+>
+> - It is needed a backwards-compatible architectural change to transactions that separates the witness data / signature into a separate data structure, creating a soft-fork.
+> - It’s called Segregated Witness (SegWit)
+>
+> **Status**: Final
+>
+> **Consequences**:
+>
+> - No more transaction malleability attacks enable the implementation of new protocols like payment channels, chained transactions and lightning networks.
+> - Witness data is usually large and moving it out of the way improves bitcoin's scalability.
+> - Older wallets should be able to handle SegWit addresses.
