@@ -10,7 +10,7 @@ The current repository does not have the complete history of vscode, but it has 
 
 ## 2. Architecture Decision Records
 
-### ADR 1: Electron as main framework (Origin)
+### ADR 1: Electron as main framework (at the beginning)
 
 #### Context
 
@@ -26,9 +26,9 @@ The current repository does not have the complete history of vscode, but it has 
 #### Consequences
 
 - Had to use NodeJS as backend for vscode
-- Maintain further updates of the framework.
+- Maintain further updates of the framework
 
-### ADR 2: Core architecture layered (Origin)
+### ADR 2: Core architecture layered (at the beginning)
 
 #### Context
 
@@ -36,16 +36,16 @@ The current repository does not have the complete history of vscode, but it has 
 
 #### Decision
 
-- Separate the application in 5 layers: Base, platform, editor, languages and workbench
+- Separate the application in 5 layers: base, platform, editor, languages and workbench
 
 #### Status: Implemented
 
 #### Consequences
 
 - Comunication between all the blocks should be implemented for being monitored
-- Adapt this layer structure to electron.
+- Adapt this layer structure to electron
 
-### ADR 3: Monaco editor for workbench layer (Origin)
+### ADR 3: Monaco editor for workbench layer (at the beginning)
 
 #### Context
 
@@ -55,15 +55,50 @@ The current repository does not have the complete history of vscode, but it has 
 
 #### Decision
 
-- Use Monaco as Editor in the workbench layer
+- Use Monaco as editor in the workbench layer
 
 #### Status: Implemented
 
 #### Consequences
 
-- Make the workbench layer able to provide framework viewlets (Explorer, status bar, menu, etc.)
-- Integrate the debugging funtion in the editor
+- Make the workbench layer able to provide framework viewlets (explorer, status bar, menu, etc.)
+- Integrate the debugging function in the editor
 
-### ADR 4: Architecture for extensions
+### ADR 4: Architecture for extensions (during the evolution)
 
-### ADR 5: Removal of languages layer
+#### Context
+
+- The editor only have the base functionalities (in beta version)
+- The editor should be extensible with more functionalities
+
+#### Decision
+
+- Implement an extension archicture, where extensions run isolated in a different proccess
+- Create an Extension API
+
+#### Status: Implemented
+
+#### Consequences
+
+- The editor have more functionalities
+- Since the extensions run in a separate process, vscode performance is improved
+
+### ADR 5: Removal of languages layer (during the evolution)
+
+#### Context
+
+- The laguages supported by vscode are implemented by the language layer and by extensions
+- The unification of the languages support is needed
+
+#### Decision
+
+- Migrate all the language support to extensions
+- Remove the language layer
+
+#### Status: In progress
+
+#### Consequences
+
+- Regardless of the language, its support for vscode is handled the same way
+- A lot of effort dedicated to the migration of languages supported by the language layer to be supported by extensions
+- Since the extensions run in a separate process, the performance of language support is improved
