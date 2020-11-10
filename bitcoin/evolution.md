@@ -2,6 +2,12 @@
 
 ## History and Evolution
 
+At the end of 2008 a single person or a group of people under the name Satoshi Nakamoto released in a mailing list a paper describing an effective decentralized, peer-to-peer, electronic monetary system called Bitcoin. It was based on the proof of work algorithm Hashcash, but validating transaction without relying on a central authority. Miners solve a difficult mathematical problem and are rewarded with new coins on success.
+
+On January 3rth of 2009, Satoshi mined the first 50 bitcoins and added the first batch of transactions (called block) to the "blockchain". After more than a decade of this event, the system has evolved dramatically, but its core ideas, features and characteristics are still there, making this cryptocurrency the most popular one.
+
+Here we present the most notable changes between versions, in terms of functionality, and a report on the number of files through each commit to the reference Bitcoin implementation, Bitcoin Core.
+
 ### Number of files per commit
 
 Starting from the first commit (with 45 files) to the official repository until 66667acc (with 2052 files).
