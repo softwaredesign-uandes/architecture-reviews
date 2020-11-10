@@ -59,7 +59,7 @@ A lot of cost wasted rewriting the most of the module DHT
 
 ## Decision
 
-- It takes fewer round-trips to establish a connection. With the QUIC transport, the IPFS handshake takes two round trips. In the future, this will be improved for reduce it to one round trip.
+- With the QUIC transport, the IPFS handshake takes two round trips. In the future, this will be improved for reduce it to one round trip.
 - The QUIC transport will open one UDP socket per listen address instead of one socket per connection.
   
 
@@ -69,7 +69,27 @@ Implemented
 
 ## Consequences
 
-- Have to make two round trips for establish a connection and the handshake, this should be improved to one round trip.
+- Have to make two round trips for establish a connection and the handshake, this should be improved to one round trip. 
+
+# Removing support for the SECIO security transport - Release 0.7.0
+
+## Context
+
+SECIO is a TLS-like security transport and has been the main security transport for all libp2p implementations. The problem is now browsers are introducing support for TLS1.3 and not all libp2p implementation can make it the default security transport.
+
+
+## Decision
+
+- Implement [Noise security transport](https://github.com/libp2p/specs/tree/master/noise) as the main security transport method.
+
+
+## Status
+
+Deprecated
+
+## Consequences
+
+- Older nodes on the network that only support SECIO will no longer be able to communicate with IPFS nodes after 0.7
 
 # ADR 3: QUIC - Release 0.4.18
 
