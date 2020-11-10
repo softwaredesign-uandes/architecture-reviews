@@ -1,6 +1,15 @@
 # Bitcoin - Evolution
 
-[TOC]
+* [Bitcoin \- Evolution](#bitcoin---evolution)
+  * [History and Evolution](#history-and-evolution)
+    * [Number of files per commit](#number-of-files-per-commit)
+  * [Architecture Decision Records](#architecture-decision-records)
+    * [<a href="https://github\.com/bitcoin/bips/blob/master/bip\-0021\.mediawiki">“BIP 21 \- URI Scheme”</a>](#bip-21---uri-scheme)
+    * [<a href="https://github\.com/bitcoin/bips/blob/master/bip\-0070\.mediawiki">“BIP 70 \- Payment Protocol”</a>](#bip-70---payment-protocol)
+    * [<a href="https://github\.com/bitcoin/bips/blob/master/bip\-0032\.mediawiki">“BIP 32 Hierarchical Deterministic Wallets”</a>](#bip-32-hierarchical-deterministic-wallets)
+    * [<a href="https://github\.com/bitcoin/bips/blob/master/bip\-0009\.mediawiki">“BIP 141 Segregated Witness (Consensus layer)”</a>](#bip-141-segregated-witness-consensus-layer)
+    * [<a href="https://github\.com/bitcoin/bips/blob/master/bip\-0009\.mediawiki">“BIP 9 Version bits with timeout and delay”</a>](#bip-9-version-bits-with-timeout-and-delay)
+
 
 ## History and Evolution
 
