@@ -44,6 +44,8 @@
 ### Consequences:
 <p> Blender has been using OpenGL for years, it continues to be a central part in the suite's modeling. </p>
 
+
+
 ### Title: Adding Eevee realtime renderer
 
 ### Context:
@@ -56,6 +58,8 @@
 
 ### Consequences:
 <p> Eevee is a valuable option for lower end computers that have trouble rendering proyects </p>
+
+
 
 ### Title: Game Engine in 2.0
 
@@ -71,3 +75,21 @@
 ### Consequences:
 <p> Game engine didn't work until 2.37 </p>
 <p> Removed in 2.8 in favor of future plans to remake engine with support from external engines like Godot.</p>
+
+
+
+### Title: Python Addons in 2.60
+
+### Context:
+<p> Every day users become more expert and require specialized tools </p>
+<p> Developers who make scripts have to make an extra effort to apply them into blender. </p>
+
+### Decision:
+<p> A specofied Addon service will be offered, where common scripts will be available and custom scripts can be added to the main program of local machines.</p>
+
+### Status: Active but updated in 2.80
+
+### Consequences:
+<p> Developers have better access to apply their scripts. </p>
+<p> Having python modules in one place mekes it easier to find the specific script you need.</p>
+
