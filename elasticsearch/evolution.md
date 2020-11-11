@@ -152,14 +152,17 @@ For the following Charts, the following versions of the ElasticSearch repository
 ### ADR1: Apache Lucene as base search software
 *Context:* (1st commit)
 
-+ An esqueleton es needed to develop the software
++ An esqueleton is needed to develop the software
 + Apache Lucene is a search software, that includes Lucene Core (Java library with indexing and search features) and Solr, a search server.
 
 *Decision:* Use Apache Lucene as the base software for the Elasticsearch project
 
 *Status:* Implemented
 
-*Consequences:* 10 years after, it is still the base software used by ElasticSearch. Easy to use and construct over it.
+*Consequences:* 
++ 10 years after, it is still the base software used by ElasticSearch. 
++ Easy to use and construct over it.
++ Apache Lucene has continuous updates that make the project to never get deprecated in its core
 
 ### ADR2: Implement Hamcrest matcher library
 *Context:* (1st commit)
@@ -171,7 +174,9 @@ For the following Charts, the following versions of the ElasticSearch repository
 
 *Status:* Implemented
 
-*Consequences:* In the begining, it was a good tool for a much smaller software like what ElasticSearch was 10 years ago. Today Hamcrest is mainly used in testing, where the performance is not important.
+*Consequences:* 
++ In the begining, it was a good tool for a much smaller software like what ElasticSearch was 10 years ago. 
++ Today Hamcrest is mainly used in testing, where the performance is not important.
 
 ### ADR3: Use Google Collect
 *Context:* (1st commit)
@@ -183,4 +188,38 @@ For the following Charts, the following versions of the ElasticSearch repository
 *Status:* Implemented
 
 *Consequences:* Google Collect changed it's name and now is Guava, but the tool is still used in different parts of the software.
+
+### ADR4: Use Docker to Install ElasticSearch 
+*Context:* (~v5.0.0)
+
++ Docker provides an easy way to deploy software in different types of Operative Systems
++ ElasticSearch should provide installation methods that adapt to the most quantity of users as possible
+
+*Decision:* We will use Docker to provide the option to install images of ElasticSearch
+
+*Status:* Implemented
+
+*Consequences:* 
+
++ Installing ElasticSearch as a Docker image allows to create single or multi node clusters in an easy way
++ Users can have multiple instances or versions of ElasticSearch
++ Docker gives an easy way to use ElasticSearch in production environments
+
+### ADR5: Create ElasticSearch images using centos as the base image
+*Context:* (~v5.0.0)
+
++ ElasticSearch images need a base OS image to have an easier way to work wth Docker
++ ElasticSearch images should last in time with good maintenance and must have good security
+
+*Decision:* 
+
++ We will use centos:7 to provide a base for the ElasticSearch images
+
+*Status:* Implemented
+
+*Consequences:* 
+
++ centos:7 is one of the latest releases of its kind, so it receives good maintenance and support
++ Implementation of the image is easy as centos has a lot of documentation
++ centos management panel support makes ElasticSearch images to host multiple sites on the server in an easier way
 
