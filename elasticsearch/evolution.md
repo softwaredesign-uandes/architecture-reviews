@@ -151,18 +151,26 @@ For the following Charts, the following versions of the ElasticSearch repository
 
 ### ADR1: Apache Lucene as base search software
 Context: (1st commit)
+
 + An esqueleton es needed to develop the software
 + Apache Lucene is a search software, that includes Lucene Core (Java library with indexing and search features) and Solr, a search server.
+
 Decision: Use Apache Lucene as the base software for the Elasticsearch project
+
 Status: Active
+
 Consequences: 10 years after, it is still the base software used by ElasticSearch. Easy to use and construct over it.
 
 ### ADR2: Implement Hamcrest matcher library
 Context: (1st commit)
+
 + Because ElasticSearch is a small software, it can use external libraries for complex algorithms without losing performance.
 + Hamcrest provides a matcher for different types of data structures (from simple text to collections and objects).
+
 Decision: Use the Hamcrest library to find matching results to the query.
+
 Status: Active
+
 Consequences: In the begining, it was a good tool for a much smaller software like what ElasticSearch was 10 years ago. Today Hamcrest is mainly used in testing, where the performance is not important.
 
 ### ADR3: Use Google Collect
