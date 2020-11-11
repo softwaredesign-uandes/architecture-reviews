@@ -26,4 +26,4 @@
 
 ### Lines of code added:
 
-![alt text](assets/lines of code.jpg "Lines added")
+![alt text](assets/lines_of_code.jpg "Lines added")
