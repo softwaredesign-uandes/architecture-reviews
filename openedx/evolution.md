@@ -6,7 +6,8 @@ To date, ten major releases have been produced from this open-source effort and 
 Each of this releases offers new IDAs (major functionalities), which have been developed apart of the main monolith (edx-platform) as microservices.
 
 ##
-TODO (@barracius): project growth over time graphs, codebase size per year.
+![openedx commits per year](assets/openEdxCpY.png "Commits per year)
+![openedx lines per year](assets/openEdxLpY.png "Lines per year)
 
 ## ADRs
 
