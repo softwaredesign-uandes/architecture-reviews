@@ -30,10 +30,15 @@
 
 ## ADRs
 
-### Title:
+### Title: Adding OpenGL 1.30
 
 ### Context:
+<p> Blender seeks to increase it's options for 3D rendering, OpenGL offers just that and can be easily included into the blender suite. </p>
 
-### Status:
+### Decision:
+<p> We will include OpenGL's API to Blender functions across all platforms. 
+
+### Status: Active
 
 ### Consequences:
+<p> Blender has been using OpenGL for years, it continues to be a central part in the suite's rendering. </p>
