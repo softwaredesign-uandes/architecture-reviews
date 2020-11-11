@@ -157,7 +157,7 @@ For the following Charts, the following versions of the ElasticSearch repository
 
 *Decision:* Use Apache Lucene as the base software for the Elasticsearch project
 
-*Status:* Active
+*Status:* Implemented
 
 *Consequences:* 10 years after, it is still the base software used by ElasticSearch. Easy to use and construct over it.
 
@@ -169,7 +169,7 @@ For the following Charts, the following versions of the ElasticSearch repository
 
 *Decision:* Use the Hamcrest library to find matching results to the query.
 
-*Status:* Active
+*Status:* Implemented
 
 *Consequences:* In the begining, it was a good tool for a much smaller software like what ElasticSearch was 10 years ago. Today Hamcrest is mainly used in testing, where the performance is not important.
 
@@ -180,7 +180,7 @@ For the following Charts, the following versions of the ElasticSearch repository
 
 *Decision:* Use the Google Collect library for different purposes in code.
 
-*Status:* Active
+*Status:* Implemented
 
 *Consequences:* Google Collect changed it's name and now is Guava, but the tool is still used in different parts of the software.
 
