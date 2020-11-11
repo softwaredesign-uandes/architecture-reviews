@@ -6,7 +6,33 @@ At the end of 2008 a single person or a group of people under the name Satoshi N
 
 On January 3rth of 2009, Satoshi mined the first 50 bitcoins and added the first batch of transactions (called block) to the "blockchain". After more than a decade of this event, the system has evolved dramatically, but its core ideas, features and characteristics are still there, making this cryptocurrency the most popular one.
 
-Here we present the most notable changes between versions, in terms of functionality, and a report on the number of files through each commit to the reference Bitcoin implementation, Bitcoin Core.
+Here we present the most notable changes between the first and current version, in terms of functionality, and a report on the number of files through each commit to the reference Bitcoin implementation, Bitcoin Core.
+
+
+- First version v0.1.0
+
+  - Full client, requiring the complete blockchain. 
+  - No command line interface.
+  - Windows only GUI (WinForms).
+  - Pay to public key (P2PK)
+- Current version
+
+  - You can choose between full client or lightweight wallets (SPV).
+  - RPC/REST/CLI. This allows the existence of SPV clients, mining pools,and others.
+  - Qt GUI, cross-platform.
+  - Supports *bitcoin:* URIs for payments.
+  - Support for SegWit addresses.
+  - P2PKH, P2PSH
+
+
+
+![Satoshi's Pre-Release Bitcoin Code Contains Some Fascinating Findings](assets/ip-bitcointalk-org_.jpeg)
+
+**Figure 1**: First version GUI
+
+![Bitcoin History Part 18: The First Bitcoin Wallet](assets/bitcoin-qt.png)
+
+**Figure 2:** Current version GUI
 
 ### Number of files per commit
 
