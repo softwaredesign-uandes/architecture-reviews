@@ -33,12 +33,26 @@
 ### Title: Adding OpenGL 1.30
 
 ### Context:
-<p> Blender seeks to increase it's options for 3D rendering, OpenGL offers just that and can be easily included into the blender suite. </p>
+<p> Blender seeks to increase it's options for 3D modeling and scuplting </p>
+<p> Blender wants to work on any platform </p>
 
 ### Decision:
-<p> We will include OpenGL's API to Blender functions across all platforms. 
+<p> We will include OpenGL's API to Blender functions across all platforms. </p>
 
 ### Status: Active
 
 ### Consequences:
-<p> Blender has been using OpenGL for years, it continues to be a central part in the suite's rendering. </p>
+<p> Blender has been using OpenGL for years, it continues to be a central part in the suite's modeling. </p>
+
+### Title: Adding Eevee realtime renderer
+
+### Context:
+<p> Blender counts with a rendering program called Cycles, which is very good, but slow, they want a renderer that is faster and can work in realtime. </p>
+
+### Decision:
+<p> We will include Eevee renderer as a rendering option in the blender suite</p>
+
+### Status: Active
+
+### Consequences:
+<p> Eevee is a valuable option for lower end computers that have toruble rendering proyects </p>
