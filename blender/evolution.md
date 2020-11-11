@@ -78,7 +78,7 @@
 
 
 
-### Title: Python Addons in 2.60
+### Title: Python Addons in 2.53
 
 ### Context:
 <p> Every day users become more expert and require specialized tools </p>
@@ -93,3 +93,19 @@
 <p> Developers have better access to apply their scripts. </p>
 <p> Having python modules in one place mekes it easier to find the specific script you need.</p>
 
+
+
+### Title: 3D Audio in 2.60
+
+### Context:
+<p> Animations and videos were lacking good 3d audio. </p>
+<p> Positional sounds could not exist in Blender. </p>
+
+### Decision:
+<p> Adding 3D audio and a speaker object that can be placed and positioned in the environment..</p>
+
+### Status: Active
+
+### Consequences:
+<p> Developers can now adjust the audio within the space. </p>
+<p> Animations within blender became even more popular amongst artists.</p>
