@@ -27,3 +27,13 @@
 ### Lines of code added:
 
 ![alt text](assets/lines_of_code.jpg "Lines added")
+
+## ADRs
+
+### Title:
+
+### Context:
+
+### Status:
+
+### Consequences:
