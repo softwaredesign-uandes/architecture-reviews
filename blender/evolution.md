@@ -55,4 +55,19 @@
 ### Status: Active
 
 ### Consequences:
-<p> Eevee is a valuable option for lower end computers that have toruble rendering proyects </p>
+<p> Eevee is a valuable option for lower end computers that have trouble rendering proyects </p>
+
+### Title: Game Engine in 2.0
+
+### Context:
+<p> 3D games are becoming more and more popular </p>
+<p> The market for game engines is becoming big </p>
+
+### Decision:
+<p> We will adapt current blender 3D modeling power with game engine tecnology to attract new users.</p>
+
+### Status: Removed in 2.80
+
+### Consequences:
+<p> Game engine didn't work until 2.37 </p>
+<p> Removed in 2.8 in favor of future plans to remake engine with support from external engines like Godot.</p>
