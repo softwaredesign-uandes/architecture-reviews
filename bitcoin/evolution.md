@@ -85,7 +85,7 @@ All BIPs can be found [this repo](https://github.com/bitcoin/bips/blob/master/RE
 >
 > - There’s been some controversy over the idea that some entities provide a certificate that can validate payments, since this goes against the decentralization provided by Bitcoin, making the transaction process dependent on external, defined players.
 
- ### [“BIP 32 Hierarchical Deterministic Wallets”](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) 
+ ### [“BIP 32 - Hierarchical Deterministic Wallets”](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) 
 
 > **Context**:
 >
@@ -102,7 +102,7 @@ All BIPs can be found [this repo](https://github.com/bitcoin/bips/blob/master/RE
 >
 > - All wallets should use the same standard algorithm to enable wallet portability. 
 
-### [“BIP 141 Segregated Witness (Consensus layer)”](https://github.com/bitcoin/bips/blob/master/bip-0009.mediawiki)
+### [“BIP 141 - Segregated Witness (Consensus layer)”](https://github.com/bitcoin/bips/blob/master/bip-0009.mediawiki)
 
 > **Context**:
 >
@@ -122,7 +122,7 @@ All BIPs can be found [this repo](https://github.com/bitcoin/bips/blob/master/RE
 > - Witness data is usually large and moving it out of the way improves bitcoin's scalability.
 > - Older wallets should be able to handle SegWit addresses.
 
-### [“BIP 9 Version bits with timeout and delay”](https://github.com/bitcoin/bips/blob/master/bip-0009.mediawiki)
+### [“BIP 9 - Version bits with timeout and delay”](https://github.com/bitcoin/bips/blob/master/bip-0009.mediawiki)
 
 > **Context**:
 >
