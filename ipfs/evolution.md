@@ -1,13 +1,15 @@
 # IPFS - Evolution
 
-The IPFS project was born in 2013 by Juan Benet,  Juan  known Git's data-linking structure is useful across many data types–not just code. Juan recognized that combining this concept with the P2P file-sharing structure of BitTorrent would be powerful: functional, secure information sharing without centralized barriers. This could transform the world far beyond scientific datasets.
+The IPFS project was born in 2013 by Juan Benet, using his knowledge about Git's data-linking structure. He recognized that combining this concept with the P2P file-sharing structure of BitTorrent would be powerful: functional, secure information sharing without centralized barriers. This could transform the world far beyond scientific datasets.
 
-The IPFS whitepaper was published in july 2014 and it caught the attention of many enthusiastis people. The contributors worked nigth, weekends and initally for free because they believed in the positive impact that open networks like IPFS could have on the world. The next year IPFS team was growing to get a coworking space in Seattle to implement and release the go-ipfs in April 2016. The improvements of 0.4.0 transitioned IPFS from an "exciting demo" to a genuinely useful tool for early adopters. In 2018 IPFS entered the next phases of its maturation. The project need to deliver on its ideological ans technical advantages at scale. IPFS has come a long way in the journey to building a faster, safer, and more open web to preserve and grow humanity's knowledge.
+The IPFS whitepaper was published in july 2014 and it caught the attention of many enthusiastis people. The contributors worked night, weekends and initally for free because they believed in the positive impact that open networks like IPFS could have on the world. The next year IPFS team was growing to get a coworking space in Seattle to implement and release the go-ipfs in April 2016. The improvements of 0.4.0 transitioned IPFS from an "exciting demo" to a genuinely useful tool for early adopters. In 2018 IPFS entered the next phases of its maturation. IPFS has come a long way in the journey to building a faster, safer, and more open web to preserve and grow humanity's knowledge.
 
 The main difference in the evolution of the first release and the newest are the speed to adding a file, providing,  finding and fetching files. In 2016 IPFS got the first release with a few things comparing now, in this case the important improves are: the security of files, the usability of IPFS and the control of the network system.
 
 
 ## Graph
+
+This graph shows the lines of codes since 2014. 
 
 ![Commits](assets/graph.svg)
 
