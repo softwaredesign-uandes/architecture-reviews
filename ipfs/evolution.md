@@ -7,18 +7,10 @@ The IPFS whitepaper was published in july 2014 and it caught the attention of ma
 The main difference in the evolution of the first release and the newest are the speed to adding a file, providing,  finding and fetching files. In 2016 IPFS got the first release with a few things comparing now, in this case the important improves are: the security of files, the usability of IPFS and the control of the network system.
 
 
-## Lines of code added and removed
-Commits
-![Commits](assets/commits.png)
+## Graph
 
-Aditions
-![Commits](assets/aditions.png)
+![Commits](assets/graph.svg)
 
-Deletions
-![Commits](assets/deletions.png)
-
-Code Frequency
-![Commits](assts/../assets/code_frec.png)
 
 
 
