@@ -40,6 +40,8 @@ There are a lot more APIs than the ones shown in the diagram, but to avoid satur
 
 ## Workflows
 
+All the communication between the APIs and the users are made through JSON files.
+
 ### Search API workflow
 
 ![Search API workflow](./assets/SearchWorkflow.PNG)
@@ -50,10 +52,12 @@ The Client User makes a request for data through the API. The API searches for t
 
 ![Index API workflow](./assets/IndexWorkflow.PNG)
 
-The Admin User creates, update, deletes or make any other action over the indexes in the Data Storage. The User can request these actions through the Index API, which then do these changes on the Data Storage.
+The Admin User creates, update, deletes or makes any other action over the indexes in the Data Storage. The User can request these actions through the Index API, which then do these changes on the Data Storage.
 
 ### Cluster API workflow
 
 ![Cluster API workflow](./assets/ClusterWorkflow.PNG)
 
 Through the Cluster API, the Admin User can manage the clusters and nodes in the Data Storage. The User makes a request for these actions through the Cluster API, which then do these changes on the Data Storage.
+
+For more information about this, visit https://www.elastic.co/guide/en/elasticsearch/reference/master/rest-apis.html
