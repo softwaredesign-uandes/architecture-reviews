@@ -39,11 +39,11 @@ A “bitcoin wallet” is the most common user interface to the bitcoin system, 
 
 ### Context Diagram
 
-![image-20201028003354700](assets/image-20201028003354700.png)
+![Context diagram](overview.assets/structurizr-60102-Context.png)
 
 ### Container Diagram
 
-![image-20201028003842079](assets/image-20201028003842079.png)
+![Bitcoin Network](overview.assets/BitcoinNetwork.png)
 
 ## Quality Attributes
 
