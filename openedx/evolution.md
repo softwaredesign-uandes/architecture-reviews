@@ -7,7 +7,8 @@ Each of this releases offers new IDAs (major functionalities), which have been d
 
 ##
 ![openedx commits per year](assets/openEdxCpY.png "Commits per year")
-![openedx lines per year](assets/openEdxLpY.png "Lines per year")
+![openedx lines per year](assets/openEdxLines.png "Lines per year")
+![openedx files per year](assets/openEdxFiles.png "Files per year")
 
 ## ADRs
 
