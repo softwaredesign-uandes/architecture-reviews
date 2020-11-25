@@ -30,9 +30,12 @@ In this image have all applications that works with IPFS
 
 ## Visualization
 
-![alt text](assets/model.jpeg "Image Example")
+### Context Diagram
 
-![alt text](assets/img.jpeg "Image Example")
+![alt text](assets/container.jpeg "Image Example")
+### Contanier Diagram
+
+![alt text](assets/context.jpeg "Image Example")
 
 ## Quality Attributes
 
