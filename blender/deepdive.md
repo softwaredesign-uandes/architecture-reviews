@@ -41,6 +41,13 @@ Indicates what color the surface of a material is, renderers rely on this compon
 ![alt text](assets/structurizr-Rendering.png "Render Components")
 
 ## Workflows
+A render folllow maany possible workflows.
+
+### Color Flow:
+First color is interpreted in the Color Management, then a material is applied to give the render some texture. Then lighting is applied according to spacial positioning, and finally it is sent to Eevee to be rendered realtime.
 
 ### Shade Output:
-From the raytracing or shadesamples comes the ShadeImput which moves into the shade output process. Here it is checked for characteristics that may need external processing, for example being "only-shadow". Then the struct is texturized, modified to fit all visible lamps, adapted in areas like alpha and diffusion, and finally it exits with a filled in ShadeResult struct.
+From the raytracing or shadesamples comes the ShadeInput which moves into the shade output process. Here it is checked for characteristics that may need external processing, for example being "only-shadow". Then the struct is texturized, modified to fit all visible lamps, adapted in areas like alpha and diffusion, and finally it exits with a filled in ShadeResult struct.
+
+### Raytracing:
+Once a render has its ShadeResult it is placed in the space and the scene light is calculated onto it, according to the positions and sources of light that are found on the scene. This gives the render its lighting data, so then, if raytracing is on, it is sent to the Cycles raytracing render to be calculated and rendered into an image.
