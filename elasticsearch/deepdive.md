@@ -4,7 +4,7 @@
 
 ### Elasticsearch API Component Diagram
 
-![Elasticsearch API Component Diagram](./assets/ComponentDiagram.PNG)
+![Elasticsearch API Component Diagram](./assets/ComponentDiagram.png)
 
 The main RESTful API is divided in sections depending on the main focus of the operations: search, documents, clusters and indexes. Each one of these, except for search, has it's own set of functions following the RESTful structure. A client or admin user makes a request to the API. Depending on the category of the request, then it is derived to the corresponding API. If it is a get or search request, the API responds to the client.
 
@@ -45,19 +45,19 @@ All the communication between the APIs and the users are made through JSON files
 
 ### Search API workflow
 
-![Search API workflow](./assets/SearchWorkflow.PNG)
+![Search API workflow](./assets/SearchWorkflow.png)
 
 The Client User makes a request for data through the API. The API searches for this data in the Data Storage (which has the original client database data organized in documents and indexed by the Admin User). The Data Storage responds with the data, which is presented by the API to the Client User.
 
 ### Index API workflow
 
-![Index API workflow](./assets/IndexWorkflow.PNG)
+![Index API workflow](./assets/IndexWorkflow.png)
 
 The Admin User creates, update, deletes or makes any other action over the indexes in the Data Storage. The User can request these actions through the Index API, which then apply these changes on the Data Storage.
 
 ### Cluster API workflow
 
-![Cluster API workflow](./assets/ClusterWorkflow.PNG)
+![Cluster API workflow](./assets/ClusterWorkflow.png)
 
 Through the Cluster API, the Admin User can manage the clusters and nodes in the Data Storage. The User makes a request for these actions through the Cluster API, which then apply these changes on the Data Storage.
 
