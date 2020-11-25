@@ -18,10 +18,10 @@ In order to access course materials, an student must get to the course browser i
 ### Student sends comment through xblock-inserted discussion box
 The student has to access the course browser, which then retrieves courses list from courses controller, which fetches course data from the sections controller which in turn displays the current course and section through the xblock renderer, then fetches the discussions from Discussions, then the discussions are rendered and displayed to the student which in turns makes a comment and submits it by sending it to the discussions.
 
-![Dynamic Diagram Two](assets/studentCommentWorkflow.png "Student comment Workflow")
+![Dynamic Diagram Two](assets/studentCommentWorkflow.PNG "Student comment Workflow")
 
 
 ### Instructor creates course
 The instructor creates the course using Studio, which in turns sends its data to the Sections controllers, adds the course to the course list in the Course Controller and creates its own interface in the XBlock Renderer.
 
-![Dynamic Diagram Three](assets/InstructorCreatesCourseWorkflow.png "Instructor creates course Workflow")
+![Dynamic Diagram Three](assets/InstructorCreatesCourseWorkflow.PNG "Instructor creates course Workflow")
