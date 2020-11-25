@@ -9,9 +9,9 @@ The principal functionality provides a peer connection to get and add files into
 
 ### Add a file
 With this workflow users can add files to IPFS network using commands.
-
+![alt text](assets/ADD.png "Image Example")
 ### Get file
 With this workflow users can request files to IPFS and receive its, download or just see them.
-
+![alt text](assets/GET.png "Image Example")
 ### Daemon process
 With this workflow users starts a long running time daemon process in IPFS server.
