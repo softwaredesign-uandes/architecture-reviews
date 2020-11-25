@@ -13,5 +13,6 @@ With this workflow users can add files to IPFS network using commands.
 ### Get file
 With this workflow users can request files to IPFS and receive its, download or just see them.
 ![alt text](assets/GET.png "Image Example")
-### Daemon process
-With this workflow users starts a long running time daemon process in IPFS server.
+### Cat file
+With this workflow the user can see the data of a IPFS file in offline mode.
+![alt text](assets/CAT.png "Image Example")
