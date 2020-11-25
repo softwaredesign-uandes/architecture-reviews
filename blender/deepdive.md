@@ -39,3 +39,8 @@ Indicates what color the surface of a material is, renderers rely on this compon
 
 
 ![alt text](assets/structurizr-Rendering.png "Render Components")
+
+## Workflows
+
+### Shade Output:
+From the raytracing or shadesamples comes the ShadeImput which moves into the shade output process. Here it is checked for characteristics that may need external processing, for example being "only-shadow". Then the struct is texturized, modified to fit all visible lamps, adapted in areas like alpha and diffusion, and finally it exits with a filled in ShadeResult struct.
