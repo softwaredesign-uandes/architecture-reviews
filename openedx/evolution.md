@@ -17,7 +17,7 @@ Each of this releases offers new IDAs (major functionalities), which have been d
 
 Deployments are increasing across the globe and administrators need to maintain and update their platform with compatible upgrades.
 
-**Decision:** We will adopt a versioning scheme consisting of named major leases to help administrators and developers to focus on compatible software versions. 
+**Decision:** We will adopt a versioning scheme consisting of named major releases to help administrators and developers to focus on compatible software versions. 
 
 Each named release will freeze the codebase and tools will be provided for each major version.
 
