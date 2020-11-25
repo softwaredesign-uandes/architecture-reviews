@@ -23,12 +23,12 @@ The `worker` environment is where scripts that runs in the background without af
 
 1. Copy-to-clipboard dynamic workflow: when a normal user copies a text from the editor (as a piece of code), the platform layer creates an instance and registers a service to handle this copy of text to the clipboard. Then, because the platform layer builds upon the base layer, the base layer adds the copied text to the clipboard at the operating system level.
 
-![](assets/workflow_vscode_clipboard.png "Copy-to-clipboard dynamic workflow")
+![](assets/workflow_vscode_clipboard.PNG "Copy-to-clipboard dynamic workflow")
 
 2. Git push dynamic workflow: when a normal user is working with git in vscode and wants to push his commits to a remote repository, he clicks in the push button within the source control view (a viewlet from the workbench layer). After that, the platform layer receives the order to do a git push and create an instance and registers a service to handle the action. Then, the base layer attends the service coming from the platform layer and executes the git push interacting with the web.
 
-![](assets/workflow_vscode_git_push.png "Git push dynamic workflow")
+![](assets/workflow_vscode_git_push.PNG "Git push dynamic workflow")
 
 3. Dynamic workflow for installation of new vscode extension: a normal user wants to understand his code more quickly, so he installs the "Bracket Pair Colorizer 2" extension. Then, the platform layer register and also instantiate the new extension. After that, because the base and the platform layer are strongly connected, the base layer notes this and reads the corresponding config file to get how the extension works (how to paint the parentheses). Finally, the editor layer display the painted parentheses according to what is indicated in the configuration file.
 
-![](assets/workflow_vscode_extension.png "Dynamic workflow for installation of new vscode extension")
+![](assets/workflow_vscode_extension.PNG "Dynamic workflow for installation of new vscode extension")
