@@ -9,11 +9,11 @@ There are two types of users: the administrator user, who configures it and inde
 This client may not necessarily be a person, as it Elasticsearch is meant to be used by other applications and services.
 
 ## Visualization
-Container Diagram
+### Container Diagram
 
 ![Container Diagram](./assets/ContainerDiagram.png)
 
-Context Diagram
+### Context Diagram
 
 ![Context Diagram](./assets/ContextDiagram.png)
 
