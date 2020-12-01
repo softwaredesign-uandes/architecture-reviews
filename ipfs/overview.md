@@ -30,14 +30,67 @@ In this image have all applications that works with IPFS
 
 ## Visualization
 
-![alt text](assets/model.jpeg "Image Example")
+### Context Diagram
 
-![alt text](assets/img.jpeg "Image Example")
+![alt text](assets/container.jpeg "Image Example")
+### Contanier Diagram
+
+![alt text](assets/context.jpeg "Image Example")
 
 ## Quality Attributes
 
-1. Performance:  HTTP downloads files from one computer at a time instead of getting pieces from multiple computers simultaneously. Peer-to-peer IPFS saves big on bandwidth — up to 60% for video — making it possible to efficiently distribute high volumes of data without duplication.
+### 1. Performance: 
 
-2. Robustness: The average lifespan of a web page is 100 days before it's gone forever. It's not good enough for the primary medium of our era to be this fragile. IPFS keeps every version of your files and makes it simple to set up resilient networks for mirroring data.
+IPFS provides a system making possible connect to many computers to get differents part of a file helping distribute efficiently high volumes of data without duplication.
 
-3. Availability: IPFS powers the creation of diversely resilient∫ networks that enable persistent availability — with or without Internet backbone connectivity. This means better connectivity for the developing world, during natural disasters, or just when you're on flaky coffee shop wi-fi.
+1. Scenario description: a user of IPFS downling a high quality video.
+
+2. Source: IPFS desktop user.
+
+3. Stimulus/Event: user download a video from IPFS desktop.
+
+4. Artifact: IPFS desktop
+
+5. Environment: normal operation
+
+6. Response: quick video download from differents IPFS nodes.
+
+7. Response measure: fast and interrupted video download.
+
+### 2. Robustness: 
+
+IPFS keeps every version of your files and makes it simple to set up resilient networks for mirroring data.
+
+1. Scenario description: a user who looks for a version of his file.
+
+2. Source: IPFS cli user.
+
+3. Stimulus/Event: user requesting a specific file version.
+
+4. Artifact: IPFS cli
+
+5. Environment: normal operation
+
+6. Response: the needed file.
+
+7. Response measure: The file is provided.
+
+
+### 3. Availability: 
+
+IPFS powers the creation of diversely resilient networks that enable persistent availability.
+
+1. Scenario description: user requesting restaurant menu with a poor mobile plan at last month day.
+
+2. Source: IPFS system.
+
+3. Stimulus/Event: user requesting a file.
+
+4. Artifact: IPFS system
+
+5. Environment: normal operation
+
+6. Response: the restaurant menu.
+
+7. Response measure: Even with bad connections the file is available.
+
